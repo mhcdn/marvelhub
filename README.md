@@ -1,6 +1,4 @@
-# marvelhub
-Only place for entertainment
-  var preKey = "?alt=media&key=";
+var preKey = "?alt=media&key=";
 
 var input = document.getElementById("myInput");
 input.addEventListener("keyup", function(event) {
