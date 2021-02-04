@@ -1,8 +1,4 @@
 /*==============================
-	Fonts
-==============================*/
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
-/*==============================
 	Common styles
 ==============================*/
 html {
@@ -3913,6 +3909,104 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   }
 }
 /*==============================
+	PhotoSwipe customization
+==============================*/
+.pswp__bg {
+  background-color: rgba(26,25,31,0.75);
+}
+.pswp__ui--fit .pswp__top-bar,
+.pswp__ui--fit .pswp__caption {
+  background-color: transparent;
+}
+.pswp__caption__center {
+  font-size: 16px;
+  color: #fff;
+  padding: 15px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+.pswp__counter {
+  font-size: 16px;
+  color: #fff;
+  padding: 0 15px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+.pswp__button {
+  opacity: 0.7;
+}
+.pswp__button:before {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+.pswp__button:hover {
+  opacity: 1;
+}
+.pswp__button:hover:before {
+  color: #ffd80e;
+}
+.pswp__button--close {
+  background: none;
+}
+.pswp__button--close:before {
+  content: '\f2c0';
+  font-family: "Ionicons";
+  position: absolute;
+  display: block;
+  font-size: 28px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.pswp__button--fs {
+  background: none;
+}
+.pswp__button--fs:before {
+  content: '\f2e7';
+  font-family: "Ionicons";
+  position: absolute;
+  display: block;
+  font-size: 24px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.pswp--fs .pswp__button--fs:before {
+  content: '\f2d8';
+}
+.pswp__button--arrow--right:before,
+.pswp__button--arrow--left:before {
+  font-family: "Ionicons";
+  position: absolute;
+  display: block;
+  font-size: 24px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: none;
+  background-color: #1a191f;
+}
+.pswp__button--arrow--left:before {
+  content: '\f27d';
+}
+.pswp__button--arrow--right:before {
+  content: '\f287';
+}
+/*==============================
 	mCustomScrollbar customization
 ==============================*/
 .mCS-custom-bar {
@@ -3947,3 +4041,87 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .mCS-custom-bar.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
   background-color: #ffd80e;
 }
+
+
+body::-webkit-scrollbar {    width: 0px;	background-color:#1a191f;  height: 2px;}
+body::-webkit-scrollbar-thumb {  background-color: #ffd80e;  border-radius: 10px; width:3px;}
+.autocomplete {position: relative;  display: inline-block;}
+.autocomplete-items::-webkit-scrollbar {width: 1px; background-color:#1a191f;  height: 0px;  border-radius:25px;}
+.autocomplete-items::-webkit-scrollbar-thumb {background-color: #ffd80e;  border-radius: 10px; width:3px;}
+
+.autocomplete-items {position: absolute;  border-bottom: none; margin-right: -1px;  border-top: none;   z-index: 99;  top: 100%;  left: 0;  right: 0; max-height: 350px; overflow: scroll}
+.autocomplete-items div {padding: 8px;  cursor: pointer; background-color: #1a191f; color:#fff; border-left: 1px #ffd80e solid; border-right: .7px #ffd80e solid; margin-top: 0px;}
+.autocomplete-items div:last-child {border-bottom-left-radius:2px;border-bottom-right-radius:2px;  border-bottom: 1px #ffd80e solid;}
+.autocomplete-items div:hover {background-color: #ad8b0e;}
+.autocomplete-active {background-color: #ad8b0e !important;}
+#myInput {width: 340px;}
+
+@media only screen and (max-width: 500px) {
+.autocomplete-items {  max-height: 240px; overflow: scroll}
+#myInput {width: 440px;}
+#mysearchbtn {left:410px;}
+
+}
+@media only screen and (max-width: 400px) {
+#myInput {width: 300px;}
+#mysearchbtn {left:270px;}
+}
+.login-attender {height: 100%; width: 100%; z-index: 27; position: absolute;background-color: black; opacity: 0.9; text-align: center; padding: 20px 10px; 20px; 5px;-webkit-justify-content: center;  -ms-flex-pack: center;  justify-content: center;  -webkit-align-items: center;  -ms-flex-align: center;  align-items: center; display: none; }
+.login-attender h2 {font-size: 22px; line-height: 290px; }
+.login--set {margin-left: -15px; margin-top: -90px;}
+
+.login--logo {  height: 40px;    width: 40px;    margin-left: 30px; border-radius: 50%; opacity: 0.9; background-color: #000;}
+.login--logo  .ac-avatar {border-radius: 50%; z-index: -1;  height: 40px; width: 40px;}
+
+@media only screen and (max-width: 800px) {
+#rt1 {display:block;} #rt2 {display:none;} #rt3 {display:none;} #rt4 {display:none;} #rt5 {display:none;}
+.login--set {margin-left: -15px; margin-top: -10px;}
+.login-attender h2 {font-size: 18px; line-height: 50px; }
+.video__title {font-size: 18px;  line-height: 22px;
+  }
+}
+  
+div.scrollmenu {  background-color: transparent;   scroll-behavior: smooth; overflow: auto;  white-space: nowrap;}
+div.scrollmenu .col-xl-3 {  display: inline-block;}
+
+.scrollmenu::-webkit-scrollbar { cursor : pointer;   width: 1px; background-color:#000;  height: 6px;}
+.scrollmenu::-webkit-scrollbar-thumb { cursor : pointer; background-color: #ffd80e;  border-radius: 10px; width:3px;}
+.account-dropdown {  position: relative;  display: inline-block;}
+.account-dropdown-content {  display: none;  position: absolute;  margin-left: -170px;  margin-top: 20px;  background-color: #1a191f;  min-width: 250px;  overflow: auto;  -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.3);  box-shadow: 0 0 15px 0 rgba(0,0,0,0.9);  -webkit-transition: 0.4s ease;  -moz-transition: 0.4s ease;  transition: 0.4s ease;  z-index: 1; border-radius: 10px;}
+.account-dropdown-content .img_frame {border-radius: 50%; z-index: -1; border: 0px solid #ffd80e; padding : ; height: 80px; width: 80px; margin: 10px 0px 0px 0px; }
+.account-dropdown-content .img_frame img {height: 100%; width: 100%;}
+.account-dropdown-content .userName { color: rgba(255,255,255,0.8);  letter-spacing: 0.4px; margin: 0px 0px 0px 0px;  font-size: 18px;  padding: 4px 4px 4px 4px;  text-decoration: none;  display: block; font-weight: 190;}
+.account-dropdown-content .userId {  color: white; margin:-12px 0px 0px 0px;  font-size: 13px; font-weight: 190; }
+.account-dropdown-content div {  color: rgba(255,255,255,0.8);  letter-spacing: 0.4px; margin: 0px 0px 0px 0px;  font-size: 16px;  padding: 4px 4px 4px 4px;  text-decoration: none;  display: block; font-weight: 100;}
+.account-dropdown-content .logOut {  color: #fff; width: 100%; background-color: red; font-size: 16px;  padding: 4px 4px 4px 4px;  text-decoration: none;  display: block; font-weight: 400;}
+.account-dropdown-content .logIn {  color: #fff; width: 100%; background-color: dodgerblue; font-size: 16px;  padding: 4px 4px 4px 4px;  text-decoration: none; font-weight: 400;}
+.account-show {display: block;}
+
+  #account-loggedin {display: none;}
+  #account-loggedout {display: none;}
+
+.loader-div {	position: fixed;	top: 0;	left: 0;	background-color: #1a191f;	height: 100vh;	width: 100%;	display: flex;	align-items: center;	justify-content: center; z-index: 90;}
+.loader {	position: relative;	width: 10vw;	height: 5vw;	padding: 1.5vw;	display: flex;	align-items: center;	justify-content: center;}
+.loader span {	position: absolute;	height: 0.8vw;	width: 0.8vw;	border-radius: 50%;	background-color: #ff0;}
+.loader span:nth-child(1) {	animation: loading-dotsA 0.5s infinite linear;}
+.loader span:nth-child(2) {	animation: loading-dotsB 0.5s infinite linear;}
+@keyframes loading-dotsA {
+	0% {		transform: none;	}
+	25% {		transform: translateX(2vw);	}
+	50% {		transform: none;	}
+	75% {		transform: translateY(2vw);	}
+	100% {		transform: none;	}
+}
+
+@keyframes loading-dotsB {
+	0% {		transform: none;	}
+	25% {		transform: translateX(-2vw);	}
+	50% {		transform: none;	}
+	75% {		transform: translateY(-2vw);	}
+	100% {		transform: none;	}
+}
+
+.single__carousel .card {
+  margin-bottom: 0;
+}
+  
